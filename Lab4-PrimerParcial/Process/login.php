@@ -20,7 +20,7 @@ if($_POST){
 
             $_SESSION["loggedUser"] = $loggedUser;
 
-            header('location: ../add-form.php');
+            header("location:../add-form.php");
         }else{
             echo "<script> if(confirm('Contraseña Incorrecta, vuelva a intentarlo.'));";
             echo "window.location = '../index.php'; </script>";
